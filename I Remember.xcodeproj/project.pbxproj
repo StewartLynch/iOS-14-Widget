@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB0E17FB25113B4E002670C9 /* PrimaryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0E17FA25113B4E002670C9 /* PrimaryItem.swift */; };
+		BB0E180325113F0F002670C9 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0E180225113F0F002670C9 /* WidgetKit.framework */; };
+		BB0E180525113F0F002670C9 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB0E180425113F0F002670C9 /* SwiftUI.framework */; };
+		BB0E180825113F0F002670C9 /* RememberIt_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0E180725113F0F002670C9 /* RememberIt_Widget.swift */; };
+		BB0E180A25113F12002670C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB0E180925113F12002670C9 /* Assets.xcassets */; };
+		BB0E180E25113F12002670C9 /* RememberIt-WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BB0E180025113F0F002670C9 /* RememberIt-WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BB0E181425113FC6002670C9 /* RememberItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCCB625250E8274003E03D7 /* RememberItem.swift */; };
+		BB0E181525113FD3002670C9 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBCCB623250E821A003E03D7 /* Icons.xcassets */; };
+		BB34EBD0250EA6EF0067500B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB34EBCF250EA6EF0067500B /* DetailViewController.swift */; };
+		BB34EBD2250ED3560067500B /* RememberItemsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB34EBD1250ED3560067500B /* RememberItemsDataSource.swift */; };
+		BB6CDC58250EEAE200BCBD5F /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6CDC57250EEAE200BCBD5F /* Store.swift */; };
+		BB6CDC5A250EEEE900BCBD5F /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB6CDC59250EEEE900BCBD5F /* FileManager+Extension.swift */; };
+		BB9C912F250E7D7300282E7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9C912E250E7D7300282E7F /* AppDelegate.swift */; };
+		BB9C9131250E7D7300282E7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9C9130250E7D7300282E7F /* ViewController.swift */; };
+		BB9C9134250E7D7300282E7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB9C9132250E7D7300282E7F /* Main.storyboard */; };
+		BB9C9136250E7D7400282E7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9C9135250E7D7400282E7F /* Assets.xcassets */; };
+		BB9C9139250E7D7400282E7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB9C9137250E7D7400282E7F /* LaunchScreen.storyboard */; };
+		BBCCB624250E821A003E03D7 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBCCB623250E821A003E03D7 /* Icons.xcassets */; };
+		BBCCB626250E8274003E03D7 /* RememberItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCCB625250E8274003E03D7 /* RememberItem.swift */; };
+		BBCCB628250E89CA003E03D7 /* RememberItCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCCB627250E89CA003E03D7 /* RememberItCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB0E180C25113F12002670C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB9C9123250E7D7300282E7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB0E17FF25113F0F002670C9;
+			remoteInfo = "RememberIt-WidgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BB0E181225113F12002670C9 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BB0E180E25113F12002670C9 /* RememberIt-WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BB0E17FA25113B4E002670C9 /* PrimaryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryItem.swift; sourceTree = "<group>"; };
+		BB0E180025113F0F002670C9 /* RememberIt-WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RememberIt-WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0E180225113F0F002670C9 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		BB0E180425113F0F002670C9 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		BB0E180725113F0F002670C9 /* RememberIt_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RememberIt_Widget.swift; sourceTree = "<group>"; };
+		BB0E180925113F12002670C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB0E180B25113F12002670C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB0E181325113F28002670C9 /* RememberIt-WidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "RememberIt-WidgetExtension.entitlements"; sourceTree = "<group>"; };
+		BB34EBCF250EA6EF0067500B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BB34EBD1250ED3560067500B /* RememberItemsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RememberItemsDataSource.swift; sourceTree = "<group>"; };
+		BB6CDC57250EEAE200BCBD5F /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		BB6CDC59250EEEE900BCBD5F /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
+		BB9C912B250E7D7300282E7F /* I Remember.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "I Remember.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB9C912E250E7D7300282E7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB9C9130250E7D7300282E7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB9C9133250E7D7300282E7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB9C9135250E7D7400282E7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB9C9138250E7D7400282E7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB9C913A250E7D7400282E7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBCCB623250E821A003E03D7 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		BBCCB625250E8274003E03D7 /* RememberItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RememberItem.swift; sourceTree = "<group>"; };
+		BBCCB627250E89CA003E03D7 /* RememberItCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RememberItCell.swift; sourceTree = "<group>"; };
+		BBEB9D88251131A40036EBF6 /* I Remember.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "I Remember.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB0E17FD25113F0F002670C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0E180525113F0F002670C9 /* SwiftUI.framework in Frameworks */,
+				BB0E180325113F0F002670C9 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB9C9128250E7D7300282E7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB0E180125113F0F002670C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB0E180225113F0F002670C9 /* WidgetKit.framework */,
+				BB0E180425113F0F002670C9 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB0E180625113F0F002670C9 /* RememberIt-Widget */ = {
+			isa = PBXGroup;
+			children = (
+				BB0E180725113F0F002670C9 /* RememberIt_Widget.swift */,
+				BB0E180925113F12002670C9 /* Assets.xcassets */,
+				BB0E180B25113F12002670C9 /* Info.plist */,
+			);
+			path = "RememberIt-Widget";
+			sourceTree = "<group>";
+		};
+		BB5E9EAA250F09A90092FFB1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB6CDC59250EEEE900BCBD5F /* FileManager+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BB5E9EAB250F0A240092FFB1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BBCCB623250E821A003E03D7 /* Icons.xcassets */,
+				BB9C9135250E7D7400282E7F /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BB5E9EAC250F0A480092FFB1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB9C913A250E7D7400282E7F /* Info.plist */,
+				BB9C912E250E7D7300282E7F /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB634864250F0914005579F8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB9C9130250E7D7300282E7F /* ViewController.swift */,
+				BB34EBCF250EA6EF0067500B /* DetailViewController.swift */,
+				BBCCB627250E89CA003E03D7 /* RememberItCell.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BB634865250F0926005579F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BBCCB625250E8274003E03D7 /* RememberItem.swift */,
+				BB34EBD1250ED3560067500B /* RememberItemsDataSource.swift */,
+				BB6CDC57250EEAE200BCBD5F /* Store.swift */,
+				BB0E17FA25113B4E002670C9 /* PrimaryItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BB9C9122250E7D7300282E7F = {
+			isa = PBXGroup;
+			children = (
+				BB0E181325113F28002670C9 /* RememberIt-WidgetExtension.entitlements */,
+				BB9C912D250E7D7300282E7F /* I Remember */,
+				BB0E180625113F0F002670C9 /* RememberIt-Widget */,
+				BB0E180125113F0F002670C9 /* Frameworks */,
+				BB9C912C250E7D7300282E7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB9C912C250E7D7300282E7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB9C912B250E7D7300282E7F /* I Remember.app */,
+				BB0E180025113F0F002670C9 /* RememberIt-WidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB9C912D250E7D7300282E7F /* I Remember */ = {
+			isa = PBXGroup;
+			children = (
+				BBEB9D88251131A40036EBF6 /* I Remember.entitlements */,
+				BB634864250F0914005579F8 /* ViewControllers */,
+				BB634865250F0926005579F8 /* Models */,
+				BB5E9EAB250F0A240092FFB1 /* Resources */,
+				BB5E9EAA250F09A90092FFB1 /* Extensions */,
+				BB5E9EAC250F0A480092FFB1 /* Supporting Files */,
+				BB9C9132250E7D7300282E7F /* Main.storyboard */,
+				BB9C9137250E7D7400282E7F /* LaunchScreen.storyboard */,
+			);
+			path = "I Remember";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB0E17FF25113F0F002670C9 /* RememberIt-WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB0E180F25113F12002670C9 /* Build configuration list for PBXNativeTarget "RememberIt-WidgetExtension" */;
+			buildPhases = (
+				BB0E17FC25113F0F002670C9 /* Sources */,
+				BB0E17FD25113F0F002670C9 /* Frameworks */,
+				BB0E17FE25113F0F002670C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RememberIt-WidgetExtension";
+			productName = "RememberIt-WidgetExtension";
+			productReference = BB0E180025113F0F002670C9 /* RememberIt-WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		BB9C912A250E7D7300282E7F /* I Remember */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB9C913D250E7D7400282E7F /* Build configuration list for PBXNativeTarget "I Remember" */;
+			buildPhases = (
+				BB9C9127250E7D7300282E7F /* Sources */,
+				BB9C9128250E7D7300282E7F /* Frameworks */,
+				BB9C9129250E7D7300282E7F /* Resources */,
+				BB0E181225113F12002670C9 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB0E180D25113F12002670C9 /* PBXTargetDependency */,
+			);
+			name = "I Remember";
+			productName = "I Remember";
+			productReference = BB9C912B250E7D7300282E7F /* I Remember.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB9C9123250E7D7300282E7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = "CreaTECH Solutions";
+				TargetAttributes = {
+					BB0E17FF25113F0F002670C9 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					BB9C912A250E7D7300282E7F = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1200;
+					};
+				};
+			};
+			buildConfigurationList = BB9C9126250E7D7300282E7F /* Build configuration list for PBXProject "I Remember" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB9C9122250E7D7300282E7F;
+			productRefGroup = BB9C912C250E7D7300282E7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB9C912A250E7D7300282E7F /* I Remember */,
+				BB0E17FF25113F0F002670C9 /* RememberIt-WidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB0E17FE25113F0F002670C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0E181525113FD3002670C9 /* Icons.xcassets in Resources */,
+				BB0E180A25113F12002670C9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB9C9129250E7D7300282E7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB9C9139250E7D7400282E7F /* LaunchScreen.storyboard in Resources */,
+				BB9C9136250E7D7400282E7F /* Assets.xcassets in Resources */,
+				BBCCB624250E821A003E03D7 /* Icons.xcassets in Resources */,
+				BB9C9134250E7D7300282E7F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB0E17FC25113F0F002670C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB0E180825113F0F002670C9 /* RememberIt_Widget.swift in Sources */,
+				BB0E181425113FC6002670C9 /* RememberItem.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB9C9127250E7D7300282E7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB6CDC58250EEAE200BCBD5F /* Store.swift in Sources */,
+				BB6CDC5A250EEEE900BCBD5F /* FileManager+Extension.swift in Sources */,
+				BB34EBD2250ED3560067500B /* RememberItemsDataSource.swift in Sources */,
+				BB9C9131250E7D7300282E7F /* ViewController.swift in Sources */,
+				BB9C912F250E7D7300282E7F /* AppDelegate.swift in Sources */,
+				BB34EBD0250EA6EF0067500B /* DetailViewController.swift in Sources */,
+				BBCCB626250E8274003E03D7 /* RememberItem.swift in Sources */,
+				BB0E17FB25113B4E002670C9 /* PrimaryItem.swift in Sources */,
+				BBCCB628250E89CA003E03D7 /* RememberItCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB0E180D25113F12002670C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB0E17FF25113F0F002670C9 /* RememberIt-WidgetExtension */;
+			targetProxy = BB0E180C25113F12002670C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB9C9132250E7D7300282E7F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB9C9133250E7D7300282E7F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB9C9137250E7D7400282E7F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB9C9138250E7D7400282E7F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB0E181025113F12002670C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "RememberIt-WidgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RKV4UP49S6;
+				INFOPLIST_FILE = "RememberIt-Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.createchsol.IRemember.RememberIt-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB0E181125113F12002670C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = "RememberIt-WidgetExtension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RKV4UP49S6;
+				INFOPLIST_FILE = "RememberIt-Widget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.createchsol.IRemember.RememberIt-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB9C913B250E7D7400282E7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB9C913C250E7D7400282E7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB9C913E250E7D7400282E7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "I Remember/I Remember.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RKV4UP49S6;
+				INFOPLIST_FILE = "$(SRCROOT)/I Remember/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.createchsol.IRemember;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB9C913F250E7D7400282E7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "I Remember/I Remember.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RKV4UP49S6;
+				INFOPLIST_FILE = "$(SRCROOT)/I Remember/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.createchsol.IRemember;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB0E180F25113F12002670C9 /* Build configuration list for PBXNativeTarget "RememberIt-WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB0E181025113F12002670C9 /* Debug */,
+				BB0E181125113F12002670C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB9C9126250E7D7300282E7F /* Build configuration list for PBXProject "I Remember" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB9C913B250E7D7400282E7F /* Debug */,
+				BB9C913C250E7D7400282E7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB9C913D250E7D7400282E7F /* Build configuration list for PBXNativeTarget "I Remember" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB9C913E250E7D7400282E7F /* Debug */,
+				BB9C913F250E7D7400282E7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB9C9123250E7D7300282E7F /* Project object */;
+}
